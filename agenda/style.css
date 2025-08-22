@@ -1,0 +1,83 @@
+/* Reset básico: remove margens e paddings padrões do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif; /* Fonte mais limpa e moderna */
+}
+
+/* Estiliza o corpo da página */
+body {
+    background: #f4f6f9; /* Cinza claro para contraste suave */
+    color: #333; /* Texto em tom escuro para legibilidade */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+/* Input de texto e data */
+input[type="text"], input[type="date"] {
+    padding: 10px;
+    margin: 8px;
+    border: 1px solid #ccc; /* Borda leve */
+    border-radius: 8px; /* Cantos arredondados */
+    outline: none;
+    transition: 0.3s; /* Suavidade na interação */
+}   
+
+/* Efeito quando o usuário clica no campo */
+input[type="text"]:focus, input[type="date"]:focus {
+    border-color: #4a90e2; /* Azul chamativo */
+    box-shadow: 0 0 6px rgba(74, 144, 226, 0.5); /* Brilho azul */
+}
+
+/* Botão de adicionar tarefa */
+button {
+    background: #4a90e2; /* Azul moderno */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Efeito hover do botão */
+button:hover {
+    background: #357abd; /* Azul mais escuro ao passar o mouse */
+}
+
+/* Área de lista de tarefas */
+#lista-de-tarefas {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px; /* Limita a largura da lista */
+}
+
+/* Cada tarefa */
+#lista-de-tarefas div {
+    background: white;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between; /* Nome à esquerda, botão à direita */
+    align-items: center;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.1); /* Sombrinha leve */
+}
+
+/* Botão de apagar (❌) */
+#lista-de-tarefas button {
+    background: #ff4d4d;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-left: 12px;
+}
+
+/* Efeito hover no botão apagar */
+#lista-de-tarefas button:hover {
+    background: #cc0000;
+}
